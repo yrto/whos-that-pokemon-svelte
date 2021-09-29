@@ -20,7 +20,7 @@
 		@apply p-2 flex flex-col text-center text-sm space-y-2;
 	}
 	label {
-		@apply text-gray-700 font-medium;
+		@apply font-medium;
 	}
 	select {
 		@apply px-2 py-1 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-200 focus:border-gray-400;

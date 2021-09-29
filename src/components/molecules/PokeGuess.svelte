@@ -6,6 +6,10 @@
 	import Button from '../atoms/Button.svelte';
 	import Input from '../atoms/Input.svelte';
 
+	let inputValue = '';
+
+	const handleSubmit = () => ($currentGuess = inputValue);
+
 	const randomIntFromInterval = (range: { min: number; max: number }) => {
 		return Math.floor(Math.random() * (range.max - range.min + 1) + range.min);
 	};
@@ -15,13 +19,6 @@
 		$misteryPokemon = await fetchMisteryPokemon(randomNumber);
 		console.log($misteryPokemon);
 	});
-
-	let inputValue = '';
-
-	const handleSubmit = (e: Event) => {
-		console.log(e.target);
-		$currentGuess = inputValue;
-	};
 </script>
 
 <form on:submit|preventDefault={handleSubmit}>

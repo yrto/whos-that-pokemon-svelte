@@ -14,7 +14,7 @@
 
 <style lang="postcss">
 	label {
-		@apply text-gray-700 font-medium text-sm mb-2;
+		@apply font-medium text-sm;
 	}
 	input {
 		@apply p-2 rounded-md border border-gray-300 text-center shadow-inner  focus:outline-none focus:ring-2 focus:ring-gray-200 focus:border-gray-400;
