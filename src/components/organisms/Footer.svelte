@@ -5,8 +5,6 @@
 
 <footer>
 	<LocaleSelector />
-
-	<img src="images/svelte-logo.svg" alt="" />
 	<div class="code">
 		<span class="svelte">
 			Made with <a href="https://kit.svelte.dev/"><SvelteLogo /></a>
@@ -24,16 +22,16 @@
 		</span>
 	</div>
 	<div class="credits">
-		Pokémon and Pokémon character <br />names are trademarks of Nintendo
+		Pokémon and Pokémon character <br />names are trademarks of Nintendo.
 	</div>
 	<div class="credits">
-		Data and images from <a href="https://pokeapi.co/">PokéAPI</a>
+		Data and images from <a href="https://pokeapi.co/">PokéAPI</a>.
 	</div>
 </footer>
 
 <style lang="postcss">
 	footer {
-		@apply flex flex-col items-center cursor-default space-y-8;
+		@apply grid justify-center gap-8 cursor-default;
 	}
 	svg {
 		@apply fill-current;

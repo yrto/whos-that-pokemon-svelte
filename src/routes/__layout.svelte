@@ -2,12 +2,12 @@
 	import '../app.postcss';
 </script>
 
-<!-- <div style="background-image: url(images/pokeball.png)"> -->
-<slot />
+<div style="background-image: url(images/bg.png)">
+	<slot />
+</div>
 
-<!-- </div> -->
 <style lang="postcss">
-	/* div {
-		@apply bg-top bg-no-repeat bg-origin-border;
-	} */
+	div {
+		@apply min-h-screen bg-top bg-no-repeat bg-cover;
+	}
 </style>
